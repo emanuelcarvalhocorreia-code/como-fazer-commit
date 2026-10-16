@@ -1,0 +1,21 @@
+# 1. Navegar até a pasta onde deseja clonar o repositório
+cd ~/Documentos
+
+# 2. Clonar o repositório (substitua a URL do seu repositório)
+git clone https://github.com/usuario/nome-do-projeto.git
+
+# 3. Entrar na pasta do projeto clonado
+cd nome-do-projeto
+
+# 4. Configurar e-mail e nome APENAS para este projeto (sem o --global)
+git config user.name "Seu Nome"
+git config user.email "seu-email@exemplo.com"
+
+# 5. Adicionar o arquivo script.sql para a área de preparação (staging)
+git add nome-do-arquivo.sql
+
+# 6. Criar o commit com uma mensagem descritiva
+git commit -m "Adiciona script de criação do banco de dados"
+
+# 7. Enviar as alterações para o repositório remoto no GitHub
+git push -u origin main
